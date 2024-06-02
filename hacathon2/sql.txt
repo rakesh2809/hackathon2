@@ -1,0 +1,11 @@
+CREATE DATABASE ration_management_system;
+
+USE ration_management_system;
+
+CREATE TABLE delivery_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    rationCardNumber VARCHAR(20) NOT NULL,
+    otp INT NOT NULL,
+    deliveryDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
